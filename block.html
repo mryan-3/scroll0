@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll0 says no</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="block.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title">nope.</h1>
+        <p class="roast" id="roastText"></p>
+        <p class="target">You were headed to <strong id="targetUrlText">somewhere</strong></p>
+
+        <div class="challenge">
+            <p class="label">Say this out loud to get 15 min of access:</p>
+            <p class="phrase" id="requiredPhrase"></p>
+        </div>
+
+        <button id="recordBtn" class="mic-btn">tap to talk</button>
+
+        <div id="transcriptionBox" class="transcription hidden"></div>
+        <p id="statusMessage" class="status hidden"></p>
+
+        <button id="goBackBtn" class="back-btn">nah, take me back</button>
+    </div>
+    <script type="module" src="block.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #0a0a0c;
+    color: #e8e8e8;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 420px;
+    padding: 40px 24px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin-bottom: 16px;
+    color: #fff;
+}
+
+.roast {
+    font-size: 18px;
+    color: #888;
+    margin-bottom: 32px;
+    line-height: 1.5;
+}
+
+.target {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.target strong {
+    color: #ef4444;
+}
+
+.challenge {
+    margin-bottom: 32px;
+}
+
+.label {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.phrase {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.4;
+}
+
+.mic-btn {
+    display: inline-block;
+    background: transparent;
+    color: #ef4444;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 14px 40px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin-bottom: 20px;
+    border: 2px solid #ef4444;
+}
+
+.mic-btn:hover {
+    background: #ef4444;
+    color: #0a0a0c;
+}
+
+.mic-btn.listening {
+    background: #ef4444;
+    color: #0a0a0c;
+    animation: breathe 1.2s ease-in-out infinite;
+}
+
+@keyframes breathe {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+}
+
+.transcription {
+    background: #111114;
+    padding: 14px 18px;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #888;
+    font-style: italic;
+    margin-bottom: 20px;
+    min-height: 48px;
+    text-align: left;
+}
+
+.transcription.hidden {
+    display: none;
+}
+
+.status {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+.status.hidden {
+    display: none;
+}
+
+.status.error {
+    color: #ef4444;
+}
+
+.status.success {
+    color: #22c55e;
+}
+
+.back-btn {
+    background: none;
+    border: none;
+    color: #333;
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.15s ease;
+}
+
+.back-btn:hover {
+    color: #888;
+}

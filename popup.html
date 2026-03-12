@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>scroll0 Setup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>scroll0</h1>
+    </div>
+
+    <div class="main-content">
+        <div class="input-group">
+            <input type="text" id="domainInput" placeholder="e.g., twitter.com">
+            <button id="addDomainBtn" class="primary-btn">Add</button>
+        </div>
+
+        <div class="list-header">
+            <h2>Blocked <span id="siteCount" class="badge">0</span></h2>
+        </div>
+
+        <ul id="blocklistContainer" class="blocklist"></ul>
+
+        <div id="emptyState" class="empty-state hidden">
+            <p>No sites blocked yet.</p>
+        </div>
+    </div>
+
+    <script type="module" src="popup.js"></script>
+</body>
+
+</html>

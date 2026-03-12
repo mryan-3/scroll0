@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #0a0a0c;
+    color: #e8e8e8;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 480px;
+    padding: 60px 32px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 80px;
+    font-weight: 800;
+    letter-spacing: -4px;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.tagline {
+    font-size: 18px;
+    color: #888;
+    margin-bottom: 64px;
+}
+
+.install {
+    text-align: left;
+    margin-bottom: 64px;
+}
+
+.install h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #555;
+    margin-bottom: 24px;
+}
+
+.steps {
+    list-style: none;
+    counter-reset: steps;
+}
+
+.steps li {
+    counter-increment: steps;
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: #bbb;
+}
+
+.steps li::before {
+    content: counter(steps) ". ";
+    color: #ef4444;
+    font-weight: 700;
+}
+
+kbd {
+    background-color: #1a1a1e;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: inherit;
+    color: #fff;
+}
+
+.links {
+    margin-top: 40px;
+}
+
+.github-link {
+    color: #ef4444;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.github-link:hover {
+    text-decoration: underline;
+}
